@@ -25,6 +25,10 @@ class Aaarch64Client:
         """Get list of projects"""
         return self._req("GET", "/projects")
 
+    def create_project(self, name: str):
+        """Create a project"""
+        return self._req("POST", "/project", {"name": name})
+
     def add_user(self, project_id: str, email: str):
         """Add a user to a project"""
         return self._req("POST", "/project/adduser", {"project": project_id, "email": email})
