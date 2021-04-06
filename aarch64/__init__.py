@@ -3,8 +3,8 @@ import requests
 from .exceptions import ApiException
 
 
-class Aaarch64Client:
-    """Client for the aarch64.com API"""
+class FosshostAarch64Client:
+    """Client for the Fosshost aarch64 API"""
     api_key: str = ""
     server: str = "https://console.aarch64.com/api"
 
